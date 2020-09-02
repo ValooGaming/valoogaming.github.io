@@ -1,1 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    padding: 2.5rem;
+    box-shadow: black 0px 0px 10px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 0px 10px;
+    position: relative
+}
+
+.header nav a::after {
+    content: '';
+    width: 0;
+    background: white;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease-in-out
+}
+
+.header nav a:hover::after {
+    content: '';
+    width: 50%;
+    background: white;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+.header nav a:nth-child(1) {
+    margin-left: 0;
+}
+
+.header-logo {
+    background: url("./assets/logo.png");
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: transform .2s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.04);
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    margin: 0 5px
+}
+
+.social.youtube {
+    background: url("./assets/youtube.svg");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social.discord {
+    background: url("./assets/Discord-Logo-Color.svg");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
