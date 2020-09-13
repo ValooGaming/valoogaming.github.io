@@ -117,15 +117,6 @@ html {
     justify-content: center;
 }
 
-
-.gaming {
-    background: url("./assets/gaming.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 500px;
-    height: 140px;
-}
-
 /*.svgsection {
     position: relative;
     width: 100%;
